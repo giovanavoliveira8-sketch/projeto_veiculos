@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 03- lógica de programação</title>
+    
+    <link rel="stylesheet" href="css/style_veiculos.css">
+    <script src = 'js/script_calculo.js'></script>
+    <script src = "js/script_veiculos.js"></script>
+    
 </head>
 <body>
     <div id="geral">
@@ -14,6 +19,7 @@
         <form id="formDados">
             <label for="modelo"> Modelo </label>
             <input type="text" name="modelo" id="modelo">
+            
 
             <label for="marca"> Marca </label>
             <input type="text" name="marca" id="marca">
@@ -21,14 +27,20 @@
             <label for="placa"> Placa </label>
             <input type="text" name="placa" id="placa">
 
-            <label for="anodefabricação"> Ano de fabricação </label>
+            <label for="anodefabricacao"> Ano de fabricação </label>
             <input type="text" name="anodefabricacao" id="anodefabricacao">
 
             <label for="valormercadoveiculo"> Valor de mercado do veículo </label>
             <input type="text" name="valormercadoveiculo" id="valormercadoveiculo">
 
-            <label for="tipodecombustivel"> Tipo de combustível </label>
-            <input type="text" name="tipodecombustivel" id="tipodecombustivel">
+            <p>Tipo de combustível</p>
+
+            <input type="radio" name = 'tipodecombustivel' value = 'gasolina'> Gasolina           
+            <input type="radio" name = 'tipodecombustivel' value = 'etanol'> Etanol
+            <input type="radio" name = 'tipodecombustivel' value = 'bicombustivel'> Bicombustìvel
+            <input type="radio" name = 'tipodecombustivel' value = 'hibrido'> Híbrido
+            <input type="radio" name = 'tipodecombustivel' value = 'eletrico'> Elétrico
+             <br><br>
 
             <button type="submit"> Enviar </button>
             <button type="reset"> Limpar </button>
@@ -36,6 +48,9 @@
         </form>
 
     </div>
+
+    <div id="lista-veiculos"></div>
+
     </div>
 </body>
 </html>
